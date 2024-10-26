@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="icon"
+      href="Images/WhatsApp Image 2023-12-24 at 5.22.25 PM.jpeg"
+    />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+  </head>
+  <body>
+    <div class="container w-75 text-center">
+      <h1 class="mt-5 mb-3 fw-bold">
+        Your Favourite <span>CRUDs</span> <span>System</span>
+      </h1>
+      <h4>Product Management System</h4>
+      <h4>
+        <span>Create</span><span>Read</span><span>Update</span
+        ><span>Delete</span>
+      </h4>
+
+      <input
+        id="proName"
+        type="text"
+        placeholder="Enter Product Name"
+        class="form-control mt-5 mb-3"
+      />
+
+      <div class="numbers mb-3">
+        <input
+          type="number"
+          id="proPrice"
+          class="form-control"
+          placeholder="Poduct Price"
+        />
+        <input
+          type="number"
+          id="proTaxes"
+          class="form-control"
+          placeholder="Product Taxes"
+        />
+        <input
+          type="number"
+          id="proDiscount"
+          class="form-control"
+          placeholder="Poduct Discount"
+        />
+      </div>
+
+      <input
+        id="proCount"
+        type="text"
+        placeholder="Enter Product Count"
+        class="form-control mb-3"
+      />
+      <input
+        id="proCategory"
+        type="text"
+        placeholder="Enter Product Category"
+        class="form-control mb-3"
+      />
+      <input
+        id="proWebsite"
+        type="text"
+        placeholder="Enter Product Website"
+        class="form-control mb-3"
+      />
+
+      <button id="create" onclick="getData ()" class="btn btn-primary w-100">
+        Create
+      </button>
+      <button
+        id="update"
+        onclick="updateButton()"
+        class="btn btn-primary w-100"
+      >
+        Update Product
+      </button>
+
+      <input
+        id="search"
+        type="text"
+        placeholder="Search For Product"
+        class="form-control my-3"
+        oninput="getSearchValue()"
+      />
+
+      <div class="search">
+        <button
+          id="searchName"
+          class="btn btn-primary"
+          onclick="searchByName()"
+        >
+          Search By Product Name
+        </button>
+
+        <button
+          id="searchCategory"
+          class="btn btn-primary"
+          onclick="searchByCategory()"
+        >
+          Search By Product Category
+        </button>
+      </div>
+
+      <div class="d-flex justify-content-end mt-3 icons">
+        <div class="px-2" onclick="showTable()">
+          <i class="fa-solid fa-table"></i>
+        </div>
+        <div class="px-2" onclick="showDivs()">
+          <i class="fa-regular fa-square"></i>
+        </div>
+      </div>
+
+      <div id="last">
+        <table class="mt-4 table" id="table">
+          <thead>
+            <th>Number</th>
+            <th>Product Name</th>
+            <th>Product Count</th>
+            <th>Product Price</th>
+            <th>Product Taxes</th>
+            <th>Product Discount</th>
+            <th>Net Income</th>
+            <th>Category</th>
+            <th>Website</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </thead>
+
+          <tbody id="tBody"></tbody>
+        </table>
+      </div>
+
+      <div class="contianer" id="divs">
+        <div class="row g-3" id="divss"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>

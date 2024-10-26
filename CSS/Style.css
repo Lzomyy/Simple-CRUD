@@ -1,0 +1,91 @@
+body {
+    background-color: #333;
+}
+
+h1,
+h4 {
+    color: rgb(227, 220, 220);
+}
+
+h1 span {
+    color: #ff6600;
+}
+
+h4 span {
+    padding-inline: 5px;
+    color: #de6412;
+
+}
+
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="number"] {
+    width: 32%;
+}
+
+#last {
+    overflow-x: auto;
+}
+
+table {
+    min-width: 800px;
+}
+
+.table {
+    --bs-table-bg: #607d8b;
+    --bs-table-border-color: transparent;
+}
+
+
+
+tr {
+    border-top: 2px solid white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchName,
+#searchCategory {
+    width: 49%;
+}
+
+
+
+.icons div {
+    border-radius: 3px;
+    background-color: #e2e20f;
+    padding-block: 5px;
+    margin-right: 2px;
+}
+
+.icons div i {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+
+
+
+#divs>div div {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#divs>div div span {
+    padding-left: 10px;
+}
+
+#divs>div div h5:last-of-type {
+    padding-bottom: 10px;
+}
